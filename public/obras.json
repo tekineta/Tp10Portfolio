@@ -1,0 +1,28 @@
+{
+    "obras": [
+        {
+            "titulo": "a",
+            "descripcion": "desc",
+            "imagenes": [],
+            "fecha": "2023-12-25",
+            "url": "",
+            "favorita": false
+        },
+        {
+            "titulo": "a",
+            "descripcion": "desc",
+            "imagenes": [],
+            "fecha": "2023-12-25",
+            "url": "",
+            "favorita": false
+        },
+        {
+            "titulo": "a",
+            "descripcion": "desc",
+            "imagenes": [],
+            "fecha": "2023-12-25",
+            "url": "",
+            "favorita": false
+        }
+    ]
+}

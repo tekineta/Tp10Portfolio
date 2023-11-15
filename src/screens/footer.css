@@ -1,0 +1,25 @@
+footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #f8f1f1;
+    font-size: 14px;
+    font: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerFooter {
+    max-width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
