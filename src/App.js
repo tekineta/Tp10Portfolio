@@ -20,6 +20,7 @@ function App() {
         } else {
             axios.get("obras.json")
             .then((res) => {
+                console.log("JOEMAMA", res);
                 const data = res.data;
                 const obras = data.obras;
                 setObras([...obras]);

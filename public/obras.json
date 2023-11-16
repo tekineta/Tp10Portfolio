@@ -1,27 +1,27 @@
 {
     "obras": [
         {
-            "titulo": "a",
-            "descripcion": "desc",
+            "titulo": "TP 7",
+            "descripcion": "agregar Router al TP3 de productos",
             "imagenes": [],
             "fecha": "2023-12-25",
-            "url": "",
+            "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
+            "favorita": true
+        },
+        {
+            "titulo": "TP 8",
+            "descripcion": "agregarle un carrito de compras al TP 7.",
+            "imagenes": [],
+            "fecha": "2023-12-25",
+            "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
             "favorita": false
         },
         {
-            "titulo": "a",
-            "descripcion": "desc",
+            "titulo": "TP 9",
+            "descripcion": "persistir el carrito de compras del TP 8 en el localStorage",
             "imagenes": [],
             "fecha": "2023-12-25",
-            "url": "",
-            "favorita": false
-        },
-        {
-            "titulo": "a",
-            "descripcion": "desc",
-            "imagenes": [],
-            "fecha": "2023-12-25",
-            "url": "",
+            "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
             "favorita": false
         }
     ]
