@@ -6,20 +6,30 @@ import { useContext, useEffect, useState } from 'react';
 import Footer from './screens/footer.js';
 import axios from 'axios';
 import contextPortfolio from "./context.js";
+import Miscreaciones from './screens/miscreaciones.js';
+import Favoritos from './screens/favoritos.js';
 
 function App() {
-    const [obras, setObras] = useState();
+    const [obras, setObras] = useState([]);
 
     useEffect(() => {
-        axios.get("obras.json")
-        .then((res) => {
-            const data = res.data;
-            const obras = data.obras;
-            setObras([...obras]);
-        })
+        const obrasEnLocalStorage = JSON.parse(localStorage.getItem("obras"));
+
+        if(obrasEnLocalStorage !== null) {
+            setObras([...obrasEnLocalStorage]);
+        } else {
+            axios.get("obras.json")
+            .then((res) => {
+                const data = res.data;
+                const obras = data.obras;
+                setObras([...obras]);
+            })
+        }
     }, [])
 
-    const context = useContext(contextPortfolio);
+    useEffect(() => {
+        localStorage.setItem("obras", JSON.stringify(obras));
+    }, [obras])
 
     return (
         <div className='divPrincipal'>
@@ -28,8 +38,9 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home></Home>} />
                         <Route path="/yo" element={<></>} />
-                        <Route path="/miscreaciones" element={<></>} />
-                        <Route path="/favoritos" element={<></>} />
+                        <Route path="/miscreaciones" element={<Miscreaciones></Miscreaciones>} />
+                        <Route path='/detalle' element={<></>} />
+                        <Route path="/favoritos" element={<Favoritos></Favoritos>} />
                     </Routes>
                     <Footer />
                 </contextPortfolio.Provider>
