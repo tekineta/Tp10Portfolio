@@ -8,6 +8,7 @@ import axios from 'axios';
 import contextPortfolio from "./context.js";
 import Miscreaciones from './screens/miscreaciones.js';
 import Favoritos from './screens/favoritos.js';
+import SobreMi from './screens/sobremi.js';
 
 function App() {
     const [obras, setObras] = useState([]);
@@ -38,7 +39,7 @@ function App() {
                 <contextPortfolio.Provider value={{obras, setObras}}>
                     <Routes>
                         <Route path="/" element={<Home></Home>} />
-                        <Route path="/yo" element={<></>} />
+                        <Route path="/sobremi" element={<SobreMi></SobreMi>} />
                         <Route path="/miscreaciones" element={<Miscreaciones></Miscreaciones>} />
                         <Route path='/detalle' element={<></>} />
                         <Route path="/favoritos" element={<Favoritos></Favoritos>} />
