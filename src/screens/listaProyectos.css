@@ -1,0 +1,40 @@
+.containerProyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proyecto {
+    border: 1px solid black;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba(207,207, 207,0.8);
+}
+
+.containerTituloYFoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    max-height: 5%;
+}
+
+.imagen {
+    max-width: 35%;
+    height: auto;
+}
+
+.containerFavoritoYLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.Favorito {
+    text-align: center;
+}
+

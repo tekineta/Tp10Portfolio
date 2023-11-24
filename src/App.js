@@ -9,6 +9,7 @@ import contextPortfolio from "./context.js";
 import Miscreaciones from './screens/miscreaciones.js';
 import Favoritos from './screens/favoritos.js';
 import SobreMi from './screens/sobremi.js';
+import Detalle from './screens/detalle.js';
 
 function App() {
     const [obras, setObras] = useState([]);
@@ -21,7 +22,6 @@ function App() {
         } else {
             axios.get("obras.json")
             .then((res) => {
-                console.log("JOEMAMA", res);
                 const data = res.data;
                 const obras = data.obras;
                 setObras([...obras]);
@@ -41,7 +41,7 @@ function App() {
                         <Route path="/" element={<Home></Home>} />
                         <Route path="/sobremi" element={<SobreMi></SobreMi>} />
                         <Route path="/miscreaciones" element={<Miscreaciones></Miscreaciones>} />
-                        <Route path='/detalle' element={<></>} />
+                        <Route path='/detalle' element={<Detalle></Detalle>} />
                         <Route path="/favoritos" element={<Favoritos></Favoritos>} />
                     </Routes>
                     <Footer />

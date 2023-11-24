@@ -4,8 +4,6 @@ footer {
     background-color: #f8f1f1;
     font-size: 14px;
     font: bold;
-    position: fixed;
-    bottom: 0;
     width: 100vw;
 }
 
@@ -22,4 +20,9 @@ footer {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.containerFooter2 {
+    margin-top: auto;
+    padding-top: 2%;
 }
