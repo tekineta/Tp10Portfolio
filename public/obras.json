@@ -1,28 +1,31 @@
 {
     "obras": [
         {
+            "Id": 1,
             "titulo": "TP 7",
             "descripcion": "agregar Router al TP3 de productos",
-            "imagenes": [],
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg", "https://www.lapatilla.com/wp-content/uploads/2019/09/2019-09-09T131524Z_1_LYNXNPEF8817L_RTROPTP_4_SOCCER-FRIENDLY-FCB-ARS-REPORT.jpg"],
             "fecha": "2023-12-25",
             "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
-            "favorita": true
+            "favorito": true
         },
         {
+            "Id": 2,
             "titulo": "TP 8",
             "descripcion": "agregarle un carrito de compras al TP 7.",
-            "imagenes": [],
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
             "fecha": "2023-12-25",
             "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
-            "favorita": false
+            "favorito": false
         },
         {
+            "Id": 3,
             "titulo": "TP 9",
             "descripcion": "persistir el carrito de compras del TP 8 en el localStorage",
-            "imagenes": [],
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
             "fecha": "2023-12-25",
             "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
-            "favorita": false
+            "favorito": false
         }
     ]
 }

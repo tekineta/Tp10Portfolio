@@ -8,47 +8,27 @@ import Form from 'react-bootstrap/Form';
 
 function SobreMi() {
     const context = useContext(contextPortfolio);
-    function sobremi() {
-        return (
-          <div>
-              <Form className="contact-form">
-        
-
-            <Form.Group controlId="nombre">
-            <div class="grupoTexto">
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control type="text" placeholder="Escribe tu nombre" />
+    return (
+        <div style={{padding: "2%"}}>
+            <div style={{padding: "2%", backgroundColor: `rgba(207,207,207,0.5)`}}>
+                <i>
+                    Hola, soy Andrés Bruno Tekiel.
+                </i>
+                <br/>
+                <i>
+                    Programo hace un año y medio, domino C#, Js, React, React Native, SQL Server y excel.
+                </i>
+                <br/>
+                <i>
+                    Tengo un nivel de ingles avanzado con diferentes diplomas de cambridge.
+                </i>
+                <br/>
+                <i>
+                    En mi jornada secundaria tambien hice media especializacion en Medios de la comunicacion en donde aprendi a conducir un programa de radio, sacar fotos semiprofesionales, y grabar videoclips.
+                    En la universidad voy a estudiar Economia Empresarial y hare un posgrado en finanzas.
+                </i>
             </div>
-            </Form.Group>
-            <Form.Group controlId="email">
-            <div class="grupoTexto2">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="✉  Escribe tu email" />
-            </div>
-            </Form.Group>
-            <Form.Group controlId="telefono">
-            <div class="grupoTexto3">
-                <Form.Label>Teléfono</Form.Label>
-                <Form.Control type="tel" placeholder="☏    Escribe tu teléfono" />
-            </div>
-            </Form.Group>
-            <Form.Group controlId="mensaje">
-            <div class="grupoTexto4">
-                <Form.Label>Mensaje</Form.Label>
-                <Form.Control type="text" placeholder="Escribe tu mensaje" />
-            </div>
-
-            </Form.Group>
-            <Button variant="primary" size="lg" type="submit" className="enviar-btn">
-            Enviar
-            </Button>
-            <Button variant="secondary" size="lg" className="volver-btn">
-            Volver
-            </Button>
-            </Form>
-      
-          </div>
-            );
-        }
-    }
-        export default SobreMi;
+        </div>
+    );
+}
+export default SobreMi;

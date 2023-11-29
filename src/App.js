@@ -33,10 +33,24 @@ function App() {
         localStorage.setItem("obras", JSON.stringify(obras));
     }, [obras])
 
+    const añadirAFavorito = (obra) => {
+        obra.favorito = true;
+        let nuevoObras = obras;
+        nuevoObras = nuevoObras.map(nuevaObra => nuevaObra.Id == obra.Id ? obra : nuevaObra);
+        setObras([...nuevoObras]);
+    }
+
+    const quitarDeFavorito = (obra) => {
+        obra.favorito = false;
+        let nuevoObras = obras;
+        nuevoObras = nuevoObras.map(nuevaObra => nuevaObra.Id == obra.Id ? obra : nuevaObra);
+        setObras([...nuevoObras]);
+    }
+
     return (
         <div className='divPrincipal'>
             <BrowserRouter>
-                <contextPortfolio.Provider value={{obras, setObras}}>
+                <contextPortfolio.Provider value={{obras, setObras, añadirAFavorito, quitarDeFavorito}}>
                     <Routes>
                         <Route path="/" element={<Home></Home>} />
                         <Route path="/sobremi" element={<SobreMi></SobreMi>} />

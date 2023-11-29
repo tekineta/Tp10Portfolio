@@ -5,7 +5,7 @@ import ListaProyectos from "./listaProyectos";
 function Favoritos() {
     const context = useContext(contextPortfolio);
 
-    const obrasAMostrar = context.obras.filter(obra => obra.favorita === true);
+    const obrasAMostrar = context.obras.filter(obra => obra.favorito === true);
 
     return (
         <ListaProyectos obras={obrasAMostrar}></ListaProyectos>
