@@ -26,6 +26,53 @@
             "fecha": "2023-12-25",
             "url": "https://github.com/chuchox4/TP-7-PRODUCTOS.git",
             "favorito": false
+        },
+        {
+            "Id": 4,
+            "titulo": "TP 10 Portfolio",
+            "descripcion": "hacer un repaso de todo lo visto, haciendo nuestro propio Portfolio.",
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
+            "fecha": "2023-12-25",
+            "url": "https://github.com/tekineta/Tp10Portfolio.git",
+            "favorito": false
+        },
+        {
+            "Id": 5,
+            "titulo": "RipioTurismo",
+            "descripcion": "Una App para la empresa de turismo interno Ripio Turismo",
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
+            "fecha": "2023-12-25",
+            "url": "https://github.com/agusfulco1/RipioTurismoTEST.git",
+            "favorito": false
+        },
+        {
+            "Id": 6,
+            "titulo": "Pizzas en NodeJS",
+            "descripcion": "Desarrollar una API NodeJS que realice un CRUD (Create, Read, Update, Delete) en la tabla Pizzas.",
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
+            "fecha": "2023-12-25",
+            "url": "https://github.com/julicarainfo/TpPizza-node-.git",
+            "favorito": false
+        },
+        {
+            "Id": 7,
+            "titulo": "TP Final",
+            "descripcion": "darle una identidad a la aplicación",
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
+            "fecha": "2023-12-25",
+            "url": " https://github.com/julicarainfo/Tp00012020101010__4-8.git",
+            "favorito": false
+        },
+        {
+            "Id": 8,
+            "titulo": "TP 2:Imagenes en RN Expo"            ,
+            "descripcion": "tp de investigación y desarrollo vamos a poner en práctica el uso de componentes y la visualización de imagenes en una app de expo.",
+            "imagenes": ["https://fotos.perfil.com/2021/09/02/trim/1140/641/javier-milei-1225144.jpg"],
+            "fecha": "2023-12-25",
+            "url": "Github: https://github.com/julicarainfo/TP-2-ReactNative-Dai-Franco-Kaliszczsak-Julian-Caraballo-Tekiel--Andy.git",
+            "favorito": false
         }
+
+
     ]
 }

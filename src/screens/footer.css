@@ -1,3 +1,5 @@
+
+
 footer {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -5,7 +7,8 @@ footer {
     font-size: 14px;
     font: bold;
     width: 100vw;
-    text-align: center;
+    text-align: center;    
+    border-bottom: 1px solid gray;
 }
 
 .row {
@@ -20,10 +23,15 @@ footer {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto;  
+
 }
 
 .containerFooter2 {
     margin-top: auto;
     padding-top: 2%;
+}
+.fondo{
+    background-color: aquamarine;
+    padding-top: 1%;
 }

@@ -10,6 +10,12 @@ import Miscreaciones from './screens/miscreaciones.js';
 import Favoritos from './screens/favoritos.js';
 import SobreMi from './screens/sobremi.js';
 import Detalle from './screens/detalle.js';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Navbar from './screens/navbar.js';
 
 function App() {
     const [obras, setObras] = useState([]);
@@ -17,15 +23,15 @@ function App() {
     useEffect(() => {
         const obrasEnLocalStorage = JSON.parse(localStorage.getItem("obras"));
 
-        if(obrasEnLocalStorage !== null) {
+        if (obrasEnLocalStorage !== null) {
             setObras([...obrasEnLocalStorage]);
         } else {
             axios.get("obras.json")
-            .then((res) => {
-                const data = res.data;
-                const obras = data.obras;
-                setObras([...obras]);
-            })
+                .then((res) => {
+                    const data = res.data;
+                    const obras = data.obras;
+                    setObras([...obras]);
+                })
         }
     }, [])
 
@@ -49,8 +55,12 @@ function App() {
 
     return (
         <div className='divPrincipal'>
+          
             <BrowserRouter>
-                <contextPortfolio.Provider value={{obras, setObras, añadirAFavorito, quitarDeFavorito}}>
+                <contextPortfolio.Provider value={{ obras, setObras, añadirAFavorito, quitarDeFavorito }}>  
+                 <Navbar>
+                    
+                 </Navbar>
                     <Routes>
                         <Route path="/" element={<Home></Home>} />
                         <Route path="/sobremi" element={<SobreMi></SobreMi>} />
@@ -58,7 +68,9 @@ function App() {
                         <Route path='/detalle' element={<Detalle></Detalle>} />
                         <Route path="/favoritos" element={<Favoritos></Favoritos>} />
                     </Routes>
-                    <Footer />
+                    <Footer >
+                        
+                    </Footer>
                 </contextPortfolio.Provider>
             </BrowserRouter>
         </div>
